@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fosforlu Kalem</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h2>Notlar & Fosforlu Kalem</h2>
+    </header>
+
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Notlarda veya metinlerde ara...">
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="sites">Siteler</button>
+      <button class="tab-btn" data-tab="all-items">Tüm Kayıtlar</button>
+    </div>
+
+    <div id="tab-sites" class="tab-content active">
+      <div id="sites-list" class="list-container"></div>
+    </div>
+
+    <div id="tab-all-items" class="tab-content">
+      <div id="items-list" class="list-container"></div>
+    </div>
+
+    <div class="footer-actions">
+      <button id="export-btn" class="btn secondary">Dışa Aktar</button>
+      <button id="import-btn" class="btn secondary">İçe Aktar</button>
+      <input type="file" id="import-file" style="display: none;" accept=".json">
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
